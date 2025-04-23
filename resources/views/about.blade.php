@@ -32,8 +32,5 @@
                 <ul class="actions"><li><a href="#" class="button">Etiam posuere</a></li>
                 </ul></div>
         </div>
-        <div id="copyright" class="container">
-            <p>Site made with: <a href="https://templated.co/">Templated.co</a></p>
-        </div>
 
 @endsection

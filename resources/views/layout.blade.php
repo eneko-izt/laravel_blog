@@ -40,5 +40,10 @@ Released   : 20140330
         </div>
 
     @yield('content')
+
+        <div id="copyright" class="container">
+            <p>Site made with: <a href="https://templated.co/">Templated.co</a></p>
+        </div>
+    
     </body>
 </html>
