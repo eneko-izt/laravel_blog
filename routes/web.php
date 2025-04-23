@@ -36,8 +36,12 @@ Route::get('/posts/{post}', function ($post) {
 });
  */
 
+ Route::get('/posts/{post}', 'PostsController@show');
+ 
  Route::get('/',  function () {
     return view('welcome');
 });
-
- Route::get('/posts/{post}', 'PostsController@show');
+ 
+Route::get('/about',  function () {
+    return view('about');
+});

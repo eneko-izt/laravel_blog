@@ -1,19 +1,7 @@
 @extends('layout')
 
-@section('header')
-
-    <div id="banner" class="container">
-        <div class="title">
-            <h2>Consectetuer adipiscing elit</h2>
-            <span class="byline">Donec pulvinar ullamcorper metus</span>
-        </div>
-        <ul class="actions"><li><a href="#" class="button">Pulvinar mollis</a></li>
-        </ul>
-    </div>
-
-@endsection
-
 @section('content')
+
         <div id="wrapper">
             <div id="three-column" class="container">
                 <div class="title">
@@ -47,5 +35,5 @@
         <div id="copyright" class="container">
             <p>Site made with: <a href="https://templated.co/">Templated.co</a></p>
         </div>
-        
+
 @endsection
