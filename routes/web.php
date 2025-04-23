@@ -43,5 +43,8 @@ Route::get('/posts/{post}', function ($post) {
 });
  
 Route::get('/about',  function () {
-    return view('about');
+
+    return view('about', [
+        'articles' => App\Article::latest()->get()
+    ]);
 });

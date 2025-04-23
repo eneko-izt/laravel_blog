@@ -17,7 +17,7 @@
                     <a href="#" class="button button-alt">More Info</a>
                 </div>
                 <div class="boxC">
-                    <p> Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi. Pellentesque adipiscing purus. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc.</p>
+                    <p>Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi. Pellentesque adipiscing purus. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc.</p>
                     <a href="#" class="button button-alt">More Info</a>
                 </div>
             </div>
