@@ -18,8 +18,9 @@ Released   : 20140330
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
         <meta name="description" content="">
         <link href="//fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-        <link href="assets/css/default.css" rel="stylesheet" >
-        <link href="assets/css/fonts.css" rel="stylesheet" >
+        <link href="css/default.css" rel="stylesheet" >
+        <link href="css/fonts.css" rel="stylesheet" >
+        <link href="css/app.css" rel="stylesheet" >
     </head>
     <body>
 
