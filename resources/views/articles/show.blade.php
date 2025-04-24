@@ -13,6 +13,7 @@
                 <img src="/images/banner.jpg" width="600" height="200" alt="" >
             </div>
             {{ $article->body }}
+        </div>
 	</div>
 </div>
 
