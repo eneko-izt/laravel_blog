@@ -3,8 +3,6 @@
 @section('content')
 
 <div id="page-wrapper">
-    <div class="container">
-	</div>
 
     <div id="page" class="container">
 		<div id="content">
@@ -35,16 +33,17 @@
 			
 		</div>
 		<div id="sidebar">
-			<div class="title">
-				<h2>Sidebar</h2>
-			</div>
-			<ul class="default"><li><a href="#">Vestibulum luctus venenatis dui</a></li>
-				<li><a href="#">Integer rutrum nisl in mi</a></li>
-				<li><a href="#">Etiam malesuada rutrum enim</a></li>
-				<li><a href="#">Etiam malesuada rutrum enim</a></li>
-				<li><a href="#">Aenean elementum facilisis ligula</a></li>
-				<li><a href="#">Ut tincidunt elit vitae augue</a></li>
-			</ul><div class="section">
+			<ul class="default">
+                @foreach ($articles as $article )
+                    <li>
+                        <h3>
+                            <a href="/articles/{{ $article->id }}">{{$article->title}}</a>
+                        </h3>
+                        <p>{{ $article->excerpt }}</p>
+                    </li>
+                @endforeach
+			</ul>
+            <div class="section">
 				<h3>Aenean elementum facilisis</h3>
 				<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
 			</div>

@@ -20,8 +20,8 @@ Released   : 20140101
 		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 		<meta name="description" content="">
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900%7CQuicksand:400,700%7CQuestrial" rel="stylesheet">
-		<link href="css/default.css" rel="stylesheet">
-		<link href="css/fonts.css" rel="stylesheet">
+		<link href="/css/default.css" rel="stylesheet">
+		<link href="/css/fonts.css" rel="stylesheet">
         <link rel="/css/app.css" rel="stylesheet">
 	</head>
 	<body>
@@ -35,7 +35,7 @@ Released   : 20140101
                 <ul><li class="{{ Request::path() === '/' ? 'current_page_item' : '' }}"><a href="/" accesskey="1" title="">Homepage</a></li>
                     <li class="{{ Request::path() === 'clients' ? 'current_page_item' : '' }}"><a href="#" accesskey="2" title="">Our Clients</a></li>
                     <li class="{{ Request::is('about') ? 'current_page_item' : '' }}"><a href="/about" accesskey="3" title="">About Us</a></li>
-                    <li class="{{ Request::path() === 'careers' ? 'current_page_item' : '' }}"><a href="#" accesskey="4" title="">Careers</a></li>
+                    <li class="{{ Request::path() === 'articles' ? 'current_page_item' : '' }}"><a href="/articles" accesskey="4" title="">Articles</a></li>
                     <li class="{{ Request::path() === 'contact' ? 'current_page_item' : '' }}"><a href="#" accesskey="5" title="">Contact Us</a></li>
                 </ul>
             </div>

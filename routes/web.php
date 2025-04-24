@@ -36,15 +36,22 @@ Route::get('/posts/{post}', function ($post) {
 });
  */
 
- Route::get('/posts/{post}', 'PostsController@show');
+Route::get('/posts/{post}', 'PostsController@show');
  
- Route::get('/',  function () {
+Route::get('/',  function () {
     return view('welcome');
 });
  
 Route::get('/about',  function () {
 
+    // return App\Article::take(2)->get();
+    // return App\Article::all();
+    // return App\Article::paginate(2);
     return view('about', [
-        'articles' => App\Article::latest()->get()
+            'articles' => App\Article::latest()->take(3)->get()
     ]);
 });
+
+Route::get('/articles', 'ArticlesController@index');
+
+Route::get('/articles/{article}', 'ArticlesController@show');
