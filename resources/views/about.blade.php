@@ -2,35 +2,54 @@
 
 @section('content')
 
-        <div id="wrapper">
-            <div id="three-column" class="container">
-                <div class="title">
-                    <h2>Feugiat lorem ipsum dolor sed veroeros</h2>
-                    <span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span>
-                </div>
-                <div class="boxA">
-                    <p>Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc. Praesent pellentesque facilisis elit. Class aptent taciti sociosqu ad  torquent per conubia nostra.</p>
-                    <a href="#" class="button button-alt">More Info</a>
-                </div>
-                <div class="boxB">
-                    <p>Etiam neque. Vivamus consequat lorem at nisl. Nullam  wisi a sem semper eleifend. Donec mattis. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc.</p>
-                    <a href="#" class="button button-alt">More Info</a>
-                </div>
-                <div class="boxC">
-                    <p>Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi. Pellentesque adipiscing purus. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc.</p>
-                    <a href="#" class="button button-alt">More Info</a>
-                </div>
+<div id="page-wrapper">
+    <div class="container">
+	</div>
+
+    <div id="page" class="container">
+		<div id="content">
+            <div class="title">
+                <h2>Welcome to our website</h2>
             </div>
-        </div>
-        <div id="welcome">
-            <div class="container">
-                <div class="title">
-                    <h2>Fusce ultrices fringilla metus</h2>
-                    <span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span>
-                </div>
-                <p>This is <strong>Assembly</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
-                <ul class="actions"><li><a href="#" class="button">Etiam posuere</a></li>
-                </ul></div>
-        </div>
+            <div id="banner" class="container">
+                <img src="images/banner.jpg" width="600" height="200" alt="" >
+            </div>
+	        <div id="two-column">
+				<div class="box1">
+					<ul class="default"><li><a href="#">Vestibulum luctus venenatis dui</a></li>
+						<li><a href="#">Integer rutrum nisl in mi</a></li>
+						<li><a href="#">Etiam malesuada rutrum enim</a></li>
+						<li><a href="#">Aenean elementum facilisis ligula</a></li>
+						<li><a href="#">Ut tincidunt elit vitae augue</a></li>
+					</ul><a href="#" class="button button-small">Etiam posuere</a>
+				</div>
+				<div class="box2">
+					<ul class="default"><li><a href="#">Vestibulum luctus venenatis dui</a></li>
+						<li><a href="#">Integer rutrum nisl in mi</a></li>
+						<li><a href="#">Etiam malesuada rutrum enim</a></li>
+						<li><a href="#">Aenean elementum facilisis ligula</a></li>
+						<li><a href="#">Ut tincidunt elit vitae augue</a></li>
+					</ul><a href="#" class="button button-small">Etiam posuere</a>
+				</div>
+			</div>
+			
+		</div>
+		<div id="sidebar">
+			<div class="title">
+				<h2>Sidebar</h2>
+			</div>
+			<ul class="default"><li><a href="#">Vestibulum luctus venenatis dui</a></li>
+				<li><a href="#">Integer rutrum nisl in mi</a></li>
+				<li><a href="#">Etiam malesuada rutrum enim</a></li>
+				<li><a href="#">Etiam malesuada rutrum enim</a></li>
+				<li><a href="#">Aenean elementum facilisis ligula</a></li>
+				<li><a href="#">Ut tincidunt elit vitae augue</a></li>
+			</ul><div class="section">
+				<h3>Aenean elementum facilisis</h3>
+				<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+			</div>
+		</div>
+	</div>
+</div>
 
 @endsection
