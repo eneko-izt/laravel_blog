@@ -23,6 +23,8 @@ Released   : 20140101
 		<link href="/css/default.css" rel="stylesheet">
 		<link href="/css/fonts.css" rel="stylesheet">
         <link rel="/css/app.css" rel="stylesheet">
+
+        @yield('head')
 	</head>
 	<body>
 
