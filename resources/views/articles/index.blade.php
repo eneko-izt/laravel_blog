@@ -11,7 +11,7 @@
             
                 <div class="title">
                     <h2>
-                        <a href="/articles/{{ $article->id }}">{{$article->title}}</a>
+                        <a href={{ route("articles.show", $article) }}>{{$article->title}}</a>
                     </h2>
                 </div>
                 <p>
