@@ -3,7 +3,7 @@
 @section('head')
 
 
-    <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/bulma/0.7./css/bulma.css">
+    <link rel="stylesheet" href="/css/articles.css">
 
 
 @endsection

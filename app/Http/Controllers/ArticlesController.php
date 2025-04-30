@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\User;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 
@@ -29,8 +30,16 @@ class ArticlesController extends Controller
 
     public function store()
     {
+        // factory(User::class, 3)->create();
+        // factory(Article::class, 3)->create([
+        //     'user_id' => 1
+        // ]);
+
+        // dd(Article::find(1)->author());
+
         Article::create($this->validateArticle());
 
+     
         return redirect(route("articles.index"));
     }
 

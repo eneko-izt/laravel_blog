@@ -13,4 +13,9 @@ class Article extends Model
     {
         return route("articles.show", $this);
     }
+
+    public function author()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }
