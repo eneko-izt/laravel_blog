@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use App\User;
+use App\Tag;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 
@@ -11,7 +12,14 @@ class ArticlesController extends Controller
 {
     public function index()
     {
-        $articles = Article::latest()->get();
+        if (request('tag')) 
+        {
+            $articles = Tag::where('name', request('tag'))->firstOrFail()->articles;
+        }
+        else
+        {
+            $articles = Article::latest()->get();
+        }
 
         return view('articles/index', ['articles' => $articles]);
     }
@@ -19,26 +27,23 @@ class ArticlesController extends Controller
     public function show(Article $article)
     {
 
- //       $article = Article::findOrFail($id);
         return view('articles.show', ['article' => $article]);
     }
 
     public function create()
     {
-        return view('articles.create');
+        return view('articles.create', ['tags' => Tag::all()]);
     }
 
     public function store()
     {
-        // factory(User::class, 3)->create();
-        // factory(Article::class, 3)->create([
-        //     'user_id' => 1
-        // ]);
+        $this->validateArticle();
 
-        // dd(Article::find(1)->author());
+        $article = new Article(request(['title', 'excerpt', 'body']));
+        $article->user_id = 1;
+        $article->save();
 
-        Article::create($this->validateArticle());
-
+        $article->tags()->attach(request('tags'));
      
         return redirect(route("articles.index"));
     }
@@ -61,7 +66,8 @@ class ArticlesController extends Controller
         return request()->validate([
             'title' => 'required',
             'excerpt' => 'required',
-            'body' => 'required'
+            'body' => 'required',
+            'tags' => 'exists:tags,id'
         ]);
     }
 }
